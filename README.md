@@ -36,3 +36,21 @@ El proyecto consiste en el diseño, maquetacion y desarrollo del Front End de un
 ### Donar
 - Informacion sobre los fondos
 - Medios de pago
+
+## Estructura de archivos
+### Archivos de estructura.
+- Inicio (index.html)
+- Mascotas (mascotas.html)
+- Requisitos (requisitos.html)
+- Donar (donar.html)
+### Archivos de estilo
+- Variables (./assets/css/variables.css)
+- Estilos (./assets/css/styles.css)
+- Archivos funcionales
+- Scripts (./assets/js/script.js)
+### Imágenes
+- FavIcon Logo (./assets/img/favicon.ico)
+- Logo "Patitas Felices" (./assets/img/logo.png)
+- Background del body en responsive (./assets/img/bg-huellas.png)
+- Fondo Inicio/Hero (./assets/img/perritos-min.png)
+- Fondo Inicio/Hero v.2 (./assets/img/perritos-min2.png)
