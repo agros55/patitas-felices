@@ -1,5 +1,5 @@
 # PROYECTO 
-![Patitas Felices](./assets/img/logo.png)
+![Patitas Felices](./assets/img/logo-readme.png)
 
 ## Informacion del proyecto
 - Plataforma: Codo a Codo 4.0
