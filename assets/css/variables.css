@@ -6,6 +6,8 @@
 * |_ Paleta de colores: es la paleta de colores con sus para los distintos elementos del proyecto.
 *
 * IMAGENES: Son la referencia a las distintas imagenes del proyecto.
+*
+* TIPOGRAFIA: Configuración de las distintas fuentes.
 */
 
 :root {
@@ -13,20 +15,22 @@
     /* Backgrounds */
     --color-bg: #f8f6f6;
     --color-bg-2: #ffffff;
-    --color-bg-3: ;
+    --color-bg-3: #eff8fd;
+    --color-bg-copy: #31241C;
 
     /* Paleta de colores  */
-    --color-primario: #833d01;
+    --color-primario: #d67d31;
     --color-texto-primario: #ffffff;
 
     --color-secundario: #ffbf94;
     --color-texto-secundario: ;
 
-    --color-acento: #d67d31;
+    --color-acento: #532700;
     --color-texto-acento: #ffffff;
 
     /* IMAGENES  */
     --img-bg: url("../img/bg-huellas.png");
+
     /* Fondo aplicado al body en el responsive. */
     --img-logo: url("../img/logo.png");
     --img-hero-inicio: url("../img/perritos-min2.png");

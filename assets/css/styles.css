@@ -47,6 +47,7 @@ img {
 
 /* GENERALES ESTRUCTURA */
 body {
+    overflow-x: hidden;
     background-color: var(--color-bg);
     background-image: var(--img-bg);
     width: 100vw;
@@ -66,7 +67,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 2vh 5vw;
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-3);
     grid-area: header;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -124,9 +125,8 @@ nav a.destacado:hover {
 /* ----- FIN HEADER ----- */
 
 main {
-    max-width: 1800px;
+    max-width: 2000px;
     grid-area: main;
-    /* background-color: lightcoral; */
     box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.75);
@@ -138,57 +138,42 @@ section {
 
 .hero {
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     max-height: 580px;
-    background-size: contain contain;
+    background-size: cover;
     background-position: center;
 }
 
 /* ----- FOOTER ----- */
 footer {
-    padding: 10px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    padding-bottom: 0;
     grid-area: footer;
-    background-color: lightblue;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "contacto contacto enlaces enlaces";
+    background-color: var(--color-bg-3);
     font-size: 0.8rem;
 }
 
-footer address {
-    grid-area: contacto;
+footer section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: var(--color-bg-3);
 }
 
-
-nav.footer {
-    grid-area: enlaces;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30% 20% 20%;
-    grid-template-areas: "title title" "item1 item3" "item2 item4";
-    margin-top: 0;
-    gap: 0;
+.copy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--color-bg-copy);
+    color: #ffffff;
 }
 
-nav.footer .title {
-    grid-area: title;
-}
-
-nav.footer :nth-child(2) {
-    grid-area: item1;
-}
-
-nav.footer :nth-child(3) {
-    grid-area: item2;
-}
-
-nav.footer :nth-child(4) {
-    grid-area: item3;
-}
-
-nav.footer :nth-child(5) {
-    grid-area: item4;
-}
 
 /* ----- FIN FOOTER ----- */
 
@@ -209,23 +194,18 @@ nav.footer :nth-child(5) {
     nav {
         margin-top: 0;
     }
-
-    footer {
-        grid-template-areas: "contacto contacto contacto enlaces";
-    }
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
-    body {
-        grid-template-areas: "header header header" ". main ." "footer footer footer";
-    }
+    body {}
 }
 
 /* Desktop 4k */
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
     body {
         grid-template-columns: minmax(10%, 500px) minmax(50%, 1800px) minmax(10%, 500px);
+        grid-template-areas: "header header header" ". main ." "footer footer footer";
     }
 }
 
@@ -235,7 +215,7 @@ nav.footer :nth-child(5) {
 
 /* ----- HERO ----- */
 .hero {
-    background-image: url("../img/perritos-min2.png");
+    background-image: url("../img/perritos-min.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,9 +242,41 @@ nav.footer :nth-child(5) {
 
 /* ----- FIN HERO ----- */
 
-/* ----- SECCION INFO ----- */
-.info {
-    background-color: var(--color-bg-2);
-    height: 15vh;
+/* ----- SECCION SUMATE ----- */
+.sumate {
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: -40px;
+    padding: 5rem;
+    background-color: var(--color-bg-3);
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas: "sum-encabezado sum-encabezado"
+        "sum-transito sum-traslado"
+        "sum-donaciones sum-voluntariados"
+    ;
+    gap: 1rem;
 
+}
+
+.sumate__encabezado {
+    grid-area: sum-encabezado;
+    padding-bottom: 1rem;
+}
+
+.sumate__transito {
+    grid-area: sum-transito;
+}
+
+.sumate__traslado {
+    grid-area: sum-traslado;
+}
+
+.sumate__donaciones {
+    grid-area: sum-donaciones;
+}
+
+.sumate__voluntariados {
+    grid-area: sum-voluntariados;
 }
