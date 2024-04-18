@@ -127,6 +127,7 @@ nav a.destacado:hover {
 main {
     max-width: 2000px;
     grid-area: main;
+    background-color: var(--color-bg);
     box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.75);
@@ -279,4 +280,50 @@ footer section {
 
 .sumate__voluntariados {
     grid-area: sum-voluntariados;
+}
+
+.nosotros {
+    display: flex;
+    gap: 3rem;
+    padding: 5vh 15vw;
+}
+
+.nosotros h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.nosotros h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.nosotros__info {
+    width: 50%;
+}
+
+.nosotros__imagenes {
+    width: 50%;
+    position: relative;
+}
+
+.nosotros__imagenes figure:nth-child(1) {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+
+.nosotros__imagenes figure:nth-child(2) {
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.nosotros__imagenes figure:nth-child(3) {
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    right: 0;
 }
