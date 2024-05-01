@@ -122,9 +122,12 @@ main p {
   /* grid-template-areas: "1 2" "1 2" "1 2" "1 2"; */
 }
 .requisitos > div {
+  border: 0.1em;
   border-style: dashed;
   border-radius: 15px;
   border-color: var(--color-acento);
+  /* border: 0.1rem dashed var(--primary-color); */
+
   padding: 1em;
   display: flex;
   flex-direction: column;
