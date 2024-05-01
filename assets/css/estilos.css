@@ -71,11 +71,6 @@ nav a:hover {
   background-color: var(--color-acento);
 }
 
-nav a.activo {
-  text-decoration: underline;
-  text-decoration-color: var(--color-acento);
-}
-
 nav a.destacado {
   color: var(--color-texto-acento);
   background-color: var(--color-acento);
@@ -91,12 +86,62 @@ nav a.destacado:hover {
   color: var(--color-texto-acento);
   background-color: var(--color-acento);
 }
+nav a.resaltado {
+  color: var(--color-texto-acento);
+  background-color: var(--color-acento);
+}
+/* >>>>>>>>>>FIN HEADER<<<<<<<<< */
 
-/* >>>>>>>>>>TEMPORAL<<<<<<<<< */
-
+/* >>>>>>>>>> MAIN <<<<<<<<< */
 main {
   grid-area: main;
 }
+.tituloMain {
+  font-size: 2.5em;
+  color: var(--color-acento);
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5em;
+}
+
+main p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 20em 2em 20em;
+  text-align: justify;
+}
+
+.requisitos {
+  justify-content: center;
+  height: 100vh;
+  margin: 2em 7em 2em 7em;
+  gap: 2em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-areas: "1 2" "1 2" "1 2" "1 2"; */
+}
+.requisitos > div {
+  border-style: dashed;
+  border-radius: 15px;
+  border-color: var(--color-acento);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.8em 0.3em 1.8em 0.3em;
+}
+.tituloRequisito {
+  color: var(--color-acento);
+}
+.parrafoRequisito {
+  padding: 1em;
+}
+
+/* >>>>>>>>>> FIN MAIN <<<<<<<<< */
+
+/* >>>>>>>>>>TEMPORAL<<<<<<<<< */
 
 footer {
   grid-area: footer;
