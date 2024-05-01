@@ -1,0 +1,105 @@
+/* >>>>>>>>>>RESET<<<<<<<<< */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  text-decoration: none;
+}
+/* >>>>>>>>>>FIN RESET<<<<<<<<< */
+
+/* >>>>>>>>>>ESTRUCTURA<<<<<<<<< */
+
+body {
+  background-color: var(--color-bg);
+  background-image: var("#"); /*Falta la imagen del fondo*/
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(5%, 1fr) 4fr minmax(5%, 1fr);
+  grid-template-rows: 15vh auto 15vh;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+/* >>>>>>>>>>FIN ESTRUCTURA<<<<<<<<< */
+
+/* >>>>>>>>>>HEADER<<<<<<<<< */
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  font-family: monser;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vh 5vh;
+  grid-area: header;
+  z-index: 100;
+}
+
+.logo {
+  background-image: var(--img-logo);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32vh;
+  height: 7vh;
+}
+
+nav {
+  display: flex;
+  margin-top: 15px;
+  gap: 0.5em;
+}
+
+nav a {
+  color: var(--color-acento);
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-texto-acento);
+  background-color: var(--color-acento);
+}
+
+nav a.activo {
+  text-decoration: underline;
+  text-decoration-color: var(--color-acento);
+}
+
+nav a.destacado {
+  color: var(--color-texto-acento);
+  background-color: var(--color-acento);
+}
+
+nav a.destacado.activo {
+  text-decoration: underline;
+  text-decoration-color: var(--color-texto-acento);
+}
+
+nav a.destacado:hover {
+  transform: scale(1.1);
+  color: var(--color-texto-acento);
+  background-color: var(--color-acento);
+}
+
+/* >>>>>>>>>>TEMPORAL<<<<<<<<< */
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* >>>>>>>>>>FIN TEMPORAL<<<<<<<<< */
