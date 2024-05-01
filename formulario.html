@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patita felices | Formulario de adopción</title>
+    <title>Patitas felices | Formulario de adopción</title>
     <!-- Estilos -->
     <link rel="stylesheet" href="./assets/css/variables_form.css" />
     <link rel="stylesheet" href="./assets/css/formulario.css" />
@@ -35,121 +35,137 @@
       </p>
 
       <section class="section__form">
-        <form action="/enviar_datos" method="post">
+        <form action="/enviar_datos" method="post" class="form">
           <fieldset class="form__container">
-            <h3>Tus datos de contacto</h3>
-            <label for="nombre">Nombre y Apellido</label>
-            <input type="text" name="nombre" id="nombre" required />
-            <label for="telefono">Teléfono de contacto</label>
-            <input type="tel" name="telefono" id="telefono" />
-            <label for="domicilio">Domicilio</label>
-            <input type="text" name="domicilio" id="domicilio" />
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email" required />
+            <h3 class="form__title">Tus datos de contacto</h3>
+            <label for="nombre" class="form__label--float"
+              >Nombre y Apellido *</label
+            >
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              class="form__input"
+              required
+            />
+            <label for="telefono" class="form__label--float"
+              >Teléfono de contacto *</label
+            >
+            <input
+              type="tel"
+              name="telefono"
+              id="telefono"
+              class="form__input"
+              required
+            />
+            <label for="domicilio" class="form__label--float"
+              >Domicilio *</label
+            >
+            <input
+              type="text"
+              name="domicilio"
+              id="domicilio"
+              class="form__input"
+              required
+            />
+            <label for="email" class="form__label--float"
+              >Correo electrónico *</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form__input"
+              required
+            />
           </fieldset>
           <fieldset class="form__container">
-            <h3>¿Dónde vivirá el perrito?</h3>
-            <p>¿En qué tipo de vivienda habitás?</p>
-            <div><input type="radio" name="vivienda" value="Casa" /> Casa</div>
-            <div>
+            <h3 class="form__title">¿Dónde vivirá el perrito?</h3>
+            <p class="form__title-ask">¿En qué tipo de vivienda habitás? *</p>
+            <label
+              ><input type="radio" name="vivienda" value="Casa" /><span
+                >Casa</span
+              >
+            </label>
+            <label>
               <input type="radio" name="vivienda" value="Departamento" />
-              Departamento
-            </div>
-            <p>¿Sos propietario o inquilino?</p>
-            <div>
-              <input type="radio" name="condicion" value="Soy propietario" />
-              Soy propietario
-            </div>
-            <div>
-              <input type="radio" name="condicion" value="Soy inquilino" /> Soy
-              inquilino
-            </div>
-            <p>
+              <span>Departamento</span>
+            </label>
+            <p class="form__title-ask">¿Sos propietario o inquilino? *</p>
+            <label>
+              <input
+                type="radio"
+                name="condicion"
+                value="Soy propietario"
+                checked
+              />
+              <span>Soy propietario</span>
+            </label>
+            <label>
+              <input type="radio" name="condicion" value="Soy inquilino" />
+              <span>Soy inquilino</span>
+            </label>
+            <p class="form__title-ask">
               En caso de alquilar, ¿consultaste con el dueño si podés tener una
-              mascota en su propiedad?
+              mascota en su propiedad? *
             </p>
-            <div>
+            <label>
               <input
                 type="radio"
                 name="puede"
                 value="Si, ya consulté y me dijeron que sí"
               />
-              Sí, ya consulté y me dijeron que sí
-            </div>
-            <div>
-              <input type="radio" name="puede" value="Todavía no consulté" />
-              Todavía no consulté
-            </div>
-          </fieldset>
-          <fieldset class="form__container">
-            <h3>¿Cómo vivirá el perrito?</h3>
-            <p>¿Tenés otras mascotas? ¿Están castradas?</p>
-            <div>
-              <input
-                type="radio"
-                name="otras_mascotas"
-                value="No tengo otras mascotas"
-              />
-              No tengo otras mascotas
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="otras_mascotas"
-                value="Sí y están todos castrados"
-              />
-              Sí y están todos castrados
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="otras_mascotas"
-                value="Algunos sí y otros no"
-              />
-              Algunos sí y otros no
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="otras_mascotas"
-                value="Sí, pero no están castrados"
-              />
-              Sí, pero no están castrados
-            </div>
-            <p>
-              ¿Estás dispuesto a adoptar al animal de por vida y hacerte cargo
-              de vacunación anual, castración, etc?
-            </p>
-            <div>
-              <input
-                type="radio"
-                name="adoptar"
-                value="Sí, comprendo el compromiso que implica"
-              />
-              Sí, comprendo el compromiso que implica
-            </div>
-            <div>
-              <input type="radio" name="adoptar" value="No estoy dispuesto" />
-              No estoy dispuesto
-            </div>
-          </fieldset>
-          <fieldset class="form__container">
-            <h3>¡Ya casi terminamos!</h3>
-            <label for="nombre_mascota">
-              Nombre de la mascota que querés adoptar
+              <span>Sí, ya consulté y me dijeron que sí</span>
             </label>
-            <input type="text" name="nombre_mascota" id="nombre_mascota" />
-            <h5>Por favor, respondé las siguientes preguntas</h5>
-            <ul>
+            <label>
+              <input type="radio" name="puede" value="Todavía no consulté" />
+              <span>Todavía no consulté</span>
+            </label>
+          </fieldset>
+          <fieldset class="form__container">
+            <h3 class="form__title">¿Cómo vivirá el perrito?</h3>
+            <p class="form__title-ask">
+              ¿Tenés otras mascotas? ¿Están castradas? *
+            </p>
+            <div class="form__container_select">
+              <select
+                name="otras_mascotas"
+                id="otras_mascotas"
+                class="form__select"
+              >
+                <option value="1">No tengo otras mascotas</option>
+                <option value="2">Sí y están todos castrados</option>
+                <option value="3">Algunos sí y otros no</option>
+                <option value="4">Sí, pero no están castrados</option>
+              </select>
+              <i></i>
+            </div>
+          </fieldset>
+          <fieldset class="form__container">
+            <h3 class="form__title">¡Ya casi terminamos!</h3>
+            <label for="nombre_mascota" class="form__label--float">
+              Nombre de la mascota que querés adoptar *
+            </label>
+            <input
+              type="text"
+              name="nombre_mascota"
+              id="nombre_mascota"
+              class="form__input"
+              required
+            />
+            <p class="form__title-ask">
+              Por favor, respondé las siguientes preguntas
+            </p>
+            <ul class="form__list">
               <li>¿Tuviste otros animales anteriormente?</li>
               <li>¿Qué harías en caso de mudanza?</li>
               <li>¿Con quién se quedaría el animal si te vas de vacaciones?</li>
               <li>¿Tenés un veterinario de confianza?</li>
             </ul>
-            <label for="respuestas">Respuestas</label>
-            <textarea name="repuestas" id="respuestas" rows="10"></textarea>
+            <label for="respuestas" class="form__label--float">Respuestas</label>
+            <textarea name="repuestas" id="respuestas" rows="10" class="form__textarea"></textarea>
           </fieldset>
-          <input type="submit" value="Enviar el formulario" />
+          <input type="submit" value="Enviar el formulario" class="btn__primary"/>
         </form>
       </section>
     </main>

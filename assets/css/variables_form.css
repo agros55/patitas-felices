@@ -1,8 +1,13 @@
 :root {
     --primary-color: #D67D31;
+    --primary-color-80: #D98741;
     --secondary-color: #31241C;
 
     /* backgrounds */
     --bg-body: #EBEBEB;
+    --bg-form: #ffffff;
 
+    /* inputs */
+    --border-input: #79747E;
+    --bg-i-select: #454B4F;
 }
