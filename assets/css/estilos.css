@@ -97,18 +97,18 @@ main {
   grid-area: main;
 }
 .tituloMain {
-  font-size: 2.5em;
+  font-size: 3em;
   color: var(--color-acento);
   display: flex;
   justify-content: center;
   padding-top: 1.5em;
 }
 
-main p {
+.parrafo1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 20em 2em 20em;
+  padding: 2em 28em 2em 28em;
   text-align: justify;
 }
 
@@ -119,27 +119,51 @@ main p {
   gap: 2em;
   display: grid;
   grid-template-columns: 50% 50%;
-  /* grid-template-areas: "1 2" "1 2" "1 2" "1 2"; */
-}
+  }
+
 .requisitos > div {
+  height: 30vh;
   border: 0.1em;
   border-style: dashed;
   border-radius: 15px;
   border-color: var(--color-acento);
-  /* border: 0.1rem dashed var(--primary-color); */
-
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /*>>>>>>>>>>>>>>>PROBANDO<<<<<<<<<<<<<<<*/  
+  display: grid;
+  /* gap: 2em; */
   align-items: center;
+  grid-template-columns: auto auto;
+  grid-template-areas: "img tituloRequisito""img parrafoRequisito";
+  
+  /*>>>>>>>>>>>>>>>PROBANDO<<<<<<<<<<<<<<<*/
+  padding: 1em;
   margin: 1.8em 0.3em 1.8em 0.3em;
 }
+.img {
+  grid-area: img;
+  height: 66px;
+  width: 73px;
+}
+ 
 .tituloRequisito {
   color: var(--color-acento);
+  grid-area: tituloRequisito;
+  padding-left: 1em;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
 }
 .parrafoRequisito {
-  padding: 1em;
+  /* background-color: aqua; */
+  padding-left: 2em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+  grid-area: parrafoRequisito;
 }
 
 /* >>>>>>>>>> FIN MAIN <<<<<<<<< */
