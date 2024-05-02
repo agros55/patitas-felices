@@ -2,11 +2,8 @@
 .page {
   max-width: 144rem;
   width: 100%;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   padding-inline: 1.5rem;
-  background-image: url(../img/huella.svg), url(../img/huella-invertida.svg);
-  background-repeat: no-repeat;
-  background-position: 101% 0%, 2% 5%;
 }
 
 .page__title {
@@ -184,35 +181,16 @@ label > input[type="radio"] + * {
   padding: 0.5rem 1rem;
 }
 
-/* BUTTONS ************************/
-.btn__primary {
-  display: flex;
-  align-items: center;
-  height: 4rem;
-  padding-inline: 2.5rem;
-  background-color: var(--primario);
-  color: white;
-  font-size: 1.6rem;
-  border: none;
-  border-radius: 10rem;
-  cursor: pointer;
-}
-
-.btn__primary:hover {
-  background-color: var(--primario-80);
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
-    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-}
-
-.btn__primary:focus,
-.btn__primary:active {
-  background-color: var(--primario-80);
+/************** MEDIAQUERIES *******/
+@media (min-width: 665px) {
+  .page {
+    background-image: url(../img/huella.svg), url(../img/huella-invertida.svg);
+    background-repeat: no-repeat;
+    background-position: 101% 0%, 2% 5%;
+  }
 }
 
 @media (min-width: 768px) {
-  .page {
-    margin-block: 5rem;
-  }
   .page,
   .section__form {
     padding-inline: 0;
@@ -224,5 +202,11 @@ label > input[type="radio"] + * {
   .form__container {
     padding: 2rem 7rem;
     border-radius: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    margin-block: 5rem;
   }
 }
