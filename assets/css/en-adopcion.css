@@ -153,7 +153,6 @@ p {
 .navegacion {
     line-height: initial;
     z-index: 10;
-    background-color: var(--blanco);
     flex-basis: 100%;
     flex-grow: 1;
     max-height: 0;
