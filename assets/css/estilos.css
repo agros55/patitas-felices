@@ -5,16 +5,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700;900&display=swap");
 
 ul,
 ol {
   text-decoration: none;
 }
+
 /* >>>>>>>>>>FIN RESET<<<<<<<<< */
 
 /* >>>>>>>>>>ESTRUCTURA<<<<<<<<< */
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: var(--color-bg);
   background-image: var("#"); /*Falta la imagen del fondo*/
   width: 100vw;
@@ -119,7 +122,7 @@ main {
   gap: 2em;
   display: grid;
   grid-template-columns: 50% 50%;
-  }
+}
 
 .requisitos > div {
   height: 30vh;
@@ -127,13 +130,13 @@ main {
   border-style: dashed;
   border-radius: 15px;
   border-color: var(--color-acento);
-  /*>>>>>>>>>>>>>>>PROBANDO<<<<<<<<<<<<<<<*/  
+  /*>>>>>>>>>>>>>>>PROBANDO<<<<<<<<<<<<<<<*/
   display: grid;
   /* gap: 2em; */
   align-items: center;
   grid-template-columns: auto auto;
-  grid-template-areas: "img tituloRequisito""img parrafoRequisito";
-  
+  grid-template-areas: "img tituloRequisito" "img parrafoRequisito";
+
   /*>>>>>>>>>>>>>>>PROBANDO<<<<<<<<<<<<<<<*/
   padding: 1em;
   margin: 1.8em 0.3em 1.8em 0.3em;
@@ -143,7 +146,7 @@ main {
   height: 66px;
   width: 73px;
 }
- 
+
 .tituloRequisito {
   color: var(--color-acento);
   grid-area: tituloRequisito;
@@ -152,7 +155,6 @@ main {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-
 }
 .parrafoRequisito {
   /* background-color: aqua; */
@@ -175,3 +177,7 @@ footer {
 }
 
 /* >>>>>>>>>>FIN TEMPORAL<<<<<<<<< */
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
