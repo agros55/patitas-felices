@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700;900&display=swap");
 
@@ -20,12 +21,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--color-bg);
   background-image: var("#"); /*Falta la imagen del fondo*/
-  width: 100vw;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: minmax(5%, 1fr) 4fr minmax(5%, 1fr);
-  grid-template-rows: 15vh auto 15vh;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
 /* >>>>>>>>>>FIN ESTRUCTURA<<<<<<<<< */
@@ -39,7 +34,6 @@ a {
 }
 
 header {
-  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -125,6 +119,7 @@ main {
 }
 
 .requisitos > div {
+  position: relative;
   height: 30vh;
   border: 0.1em;
   border-style: dashed;
@@ -155,6 +150,22 @@ main {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+}
+.requisitos__numeros {
+  background-color: var(--color-acento);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: white;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
 }
 .parrafoRequisito {
   /* background-color: aqua; */
