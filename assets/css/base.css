@@ -14,7 +14,7 @@
   --gris-claro: #f9f9f9;
 
   /* backgrounds */
-  --bg-body: #ebebeb;
+  --bg-body: #F9F9F9;
   --bg-form: #ffffff;
 
   /* inputs */
@@ -73,6 +73,10 @@ li {
   padding-left: 0;
 }
 
+.d-block {
+  display: block;
+}
+
 /* ====== Header ====== */
 .header {
   height: 95px;
@@ -128,6 +132,7 @@ li {
   background-color: var(--blanco);
   flex-basis: 100%;
   visibility: hidden;
+  overflow: hidden;
   transition: all 0.3s ease;
 }
 
