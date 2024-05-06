@@ -53,7 +53,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: minmax(5%, 1fr) 4fr minmax(5%, 1fr);
+    grid-template-columns: minmax(5%, 1fr) 6fr minmax(5%, 1fr);
     grid-template-rows: 15vh auto 15vh;
     grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
@@ -245,11 +245,12 @@ footer section {
 
 /* ----- SECCION SUMATE ----- */
 .sumate {
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     margin-top: -40px;
-    padding: 5rem;
+    padding: 2rem;
     background-color: var(--color-bg-3);
+    opacity: .95;
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: auto 1fr 1fr;
@@ -257,8 +258,31 @@ footer section {
         "sum-transito sum-traslado"
         "sum-donaciones sum-voluntariados"
     ;
-    gap: 1rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    border: 1px dashed var(--color-primario);
 
+}
+
+.sumate__item {
+    background-color: var(--color-bg-2);
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.sumate__item>figure {
+    margin: 0 1rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sumate h3,
+.sumate h2 {
+    color: var(--color-primario);
+    margin-bottom: .5rem;
 }
 
 .sumate__encabezado {
