@@ -30,7 +30,7 @@ body {
 a {
   text-decoration: none;
   font-style: normal;
-  font-family: monser;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -38,7 +38,6 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 2vh 5vh;
-  grid-area: header;
   z-index: 100;
 }
 
@@ -91,7 +90,6 @@ nav a.resaltado {
 
 /* >>>>>>>>>> MAIN <<<<<<<<< */
 main {
-  grid-area: main;
 }
 .tituloMain {
   font-size: 3em;
@@ -111,7 +109,6 @@ main {
 
 .requisitos {
   justify-content: center;
-  height: 100vh;
   margin: 2em 7em 2em 7em;
   gap: 2em;
   display: grid;
@@ -125,14 +122,10 @@ main {
   border-style: dashed;
   border-radius: 15px;
   border-color: var(--color-acento);
-  /*>>>>>>>>>>>>>>>PROBANDO<<<<<<<<<<<<<<<*/
   display: grid;
-  /* gap: 2em; */
   align-items: center;
   grid-template-columns: auto auto;
   grid-template-areas: "img tituloRequisito" "img parrafoRequisito";
-
-  /*>>>>>>>>>>>>>>>PROBANDO<<<<<<<<<<<<<<<*/
   padding: 1em;
   margin: 1.8em 0.3em 1.8em 0.3em;
 }
@@ -149,7 +142,6 @@ main {
   padding-top: 1em;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 .requisitos__numeros {
   background-color: var(--color-acento);
@@ -168,7 +160,6 @@ main {
   transform: translate(-50%, -50%);
 }
 .parrafoRequisito {
-  /* background-color: aqua; */
   padding-left: 2em;
   padding-bottom: 1em;
   display: flex;
@@ -182,11 +173,31 @@ main {
 /* >>>>>>>>>> FIN MAIN <<<<<<<<< */
 
 /* >>>>>>>>>>TEMPORAL<<<<<<<<< */
+:root {
+  /* COLORES */
+  /* Backgrounds */
+  --color-bg: #f8f6f6;
+  --color-bg-2: #ffffff;
+  --color-bg-3: ;
 
-footer {
-  grid-area: footer;
+  /* Paleta de colores  */
+  --color-primario: #833d01;
+  --color-texto-primario: #ffffff;
+
+  --color-secundario: #ffbf94;
+  --color-texto-secundario: ;
+
+  --color-acento: #d67d31;
+  --color-texto-acento: #ffffff;
+
+  /* IMAGENES  */
+
+  /* Fondo aplicado al body en el responsive. */
+  --img-logo: url("../img/logo.png");
+
+  /* TIPOGRAFIA */
+  --txt-titulo: ;
 }
-
 /* >>>>>>>>>>FIN TEMPORAL<<<<<<<<< */
 h1,
 h2 {
