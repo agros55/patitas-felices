@@ -9,23 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
         iconoNav.addEventListener('click', (e) => {
 
             if(e.target.src.includes('/assets/img/hamburguesa.svg')) {
-
                 iconoNav.src = '/assets/img/cruz-cerrar.svg';
-                menuMobile.classList.add('d-block'); //Aparece el menu
-                setTimeout(() => {
-                    menuMobile.style.maxHeight = menuMobile.scrollHeight + 'px';
-                    menuMobile.style.visibility = 'visible';
-                }, 50);
-
+                menuMobile.style.visibility = 'visible';
+                menuMobile.style.maxHeight = menuMobile.scrollHeight + 'px';
             } else {
                 iconoNav.src = '/assets/img/hamburguesa.svg';
                 menuMobile.style.maxHeight = '0';
                 menuMobile.style.visibility = 'hidden';
-                
-                menuMobile.addEventListener('transitionend', () => {
-                    menuMobile.classList.remove('d-block');
-                }, { once: true });
-                
             };       
         });
     };
