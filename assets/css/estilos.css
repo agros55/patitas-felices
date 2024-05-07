@@ -198,6 +198,100 @@ main {
   /* TIPOGRAFIA */
   --txt-titulo: ;
 }
+
+
+
+
+
+
+/* ====== Footer ====== */
+
+.footer {
+  background: url("../img/wave.svg");
+  background-size: cover;
+  padding-top: 11rem;
+}
+
+.footer__contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.footer__grid {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__box {
+  display: grid;
+  grid-template-columns: 1fr 0.15fr 3fr;
+}
+.footer__box img {
+  grid-column: 1 / 4;
+}
+
+.footer__box h3,
+.footer__box p,
+.footer__box a {
+  grid-column: 1 / 4;
+}
+
+.footer__box:nth-child(1) {
+  margin-bottom: 4rem;
+}
+.footer__titulo {
+  font-family: var(--fuente-principal);
+  font-size: 2.4rem;
+}
+
+.footer__barra {
+  background-color: var(--secundario);
+  padding: 2rem 4rem;
+}
+
+.footer__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__logo {
+  width: 17rem;
+}
+
+.footer__redes {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primario);
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.footer__redes img {
+  height: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
 /* >>>>>>>>>>FIN TEMPORAL<<<<<<<<< */
 h1,
 h2 {
