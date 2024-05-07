@@ -1,60 +1,29 @@
 
-/* Fuente */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700;900&display=swap');
-
-/* Variables */
-
-:root {
-    --primario: #D67D31;
-    --secundario: #31241C;
-    --negro: #000;
-    --blanco: #FFF;
-    --gris-claro: #F9F9F9;
-    --fuente-principal: 'Montserrat', sans-serif;
-    --fuente-secundaria: 'Roboto', sans-serif;
-}
+/*Pagina En adopción ------------------------------------------->*/
 
 
 /* Globales */
 
-html { 
-    font-size:62.5%;
-}
-
-*, *:before, *:after { 
-    box-sizing:border-box;
-    margin: 0;
-    position: relative;
-}
-
-body {
-    font-family: var(--fuente-secundaria);
-    font-size: 1.6rem;
-    line-height: 1.5;
-    background-color: var(--gris-claro);
-}
-
-img { 
-    max-width:100%;
-    display:block;
-}
-
-a {
-    text-decoration: none;
-    display: block;
-    color: var(--negro);
-}
-
 [class*="contenedor"] {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 95%;
+    padding: 0 2rem;
+}
+
+@media (min-width: 1024px) { 
+    [class*="contenedor"] {
+        padding: 0 4rem;
+    }
+}
+
+@media (min-width: 1968px) { 
+    [class*="contenedor"] {
+        max-width: 120rem;
+        margin: 0 auto;
+        width: 95%;
+    }
 }
 
 [class*="heading"] {
-    font-size: 4rem;
-    margin: 2rem 0 2rem 0;
+    font-size: 3rem;
     font-family: var(--fuente-principal);
     font-weight: 700;
     color: var(--primario);
@@ -62,7 +31,8 @@ a {
 
 @media (min-width: 768px) { 
     [class*="heading"] {
-        font-size: 4.5rem;
+        font-size: 4.2rem;
+        line-height: 6rem;
     }
 }
 
@@ -72,100 +42,24 @@ a {
     }
 }
 
-p {
-    margin: 1rem 0;
-}
 
 /* ====== Header ====== */
 
-.header {
-    line-height: 0;
+.header__contenedor > a:nth-child(1) {
+    padding-left: 0;
 }
 
-.header::after {
-    content: url('../img/wave.svg');
-    fill: #FFF;
-    display: block;
-    transform: rotate(180deg);
-    width: 100%;
-    margin-top: -0.5rem;
-    position: absolute;   
-}
-
-.header__contenido {
-    background-color: var(--blanco);
-    min-height: 65vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    padding: 4rem 0;
-    width: 100%;
-}
-
-@media (min-width: 2560px) { 
-    .header__contenido {
-        min-height: 35vh;
-    }
-}
-
-@media (min-height: 1360px) { 
-    .header__contenido {
-        min-height: 30vh;
-    }
-}
-
-
-.header__barra {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--blanco);
-    gap: 1rem;
-}
-
-.header__logo {
-    max-width: 20rem;
-}
-
-@media (min-width: 1024px) { 
-    .header__logo {
-        padding-bottom: 1rem;
-    }
-}
-
-@media (min-width: 1200px) { 
-    .header__logo {
-        max-width: 26.4rem;
-    }
-}
-.header__icono-nav {
+.header__contenedor img.header__icono-nav {
+    padding-right: 0;
     width: 3rem;
-    cursor: pointer;
-}
-
-@media (min-width: 1024px) { 
-    .header__icono-nav {
-        display: none;
-    }
 }
 
 .navegacion {
-    line-height: initial;
-    z-index: 10;
-    flex-basis: 100%;
-    flex-grow: 1;
     max-height: 0;
-    visibility: hidden;
-    overflow: hidden;
-    transition: all 0.3s ease; 
 }
 
 @media (min-width: 1024px) { 
     .navegacion {
-        display: block;
-        flex-basis: initial;
-        visibility: initial;
         max-height: initial;
     }
 }
@@ -176,7 +70,6 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: var(--blanco);
 }
 
 @media (min-width: 1024px) { 
@@ -194,7 +87,8 @@ p {
     transition: background-color .3s;
 }
 
-.navegacion__enlace:hover:not(.navegacion__enlace--donar)  {
+.navegacion__enlace:hover:not(.navegacion__enlace--donar),
+.activo  {
     background-color: #FCF5EF;
 }
 
@@ -205,23 +99,23 @@ p {
     border: var(--primario) solid 1px;
 }
 
-@media (min-width: 1024px) { 
-    .navegacion__enlace--donar {
-        padding: 1rem 4rem;
-    }
+.navegacion__enlace--donar:hover {
+    background-color: var(--primario-80);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
-
-.d-block {
-    display: block;
+@media (min-width: 1024px) { 
+    .header__contenedor .navegacion__enlace--donar {
+        padding: 0.7rem 2.5rem;
+    }
 }
 
 /* ====== Main ====== */
 
 .mascotas {
     z-index: 5;
-    margin-top: -50vh;
-    padding-top: 4rem;
+    padding-top: 5rem;
     text-align: center;
     background-image: url(../img/huella.svg), url(../img/huella-invertida.svg);
     background-repeat: no-repeat;
@@ -248,11 +142,11 @@ p {
 
 .mascotas__descripcion {
     max-width: 40.6rem;
-    margin: 0 auto;
+    margin: 1.5rem auto;
 }
 
 .mascotas_grid {
-    padding: 11rem 0 10rem 0;
+    padding: 8rem 0 10rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     place-items: center;
@@ -343,76 +237,16 @@ p {
 
 /* ====== Footer ====== */
 
-.footer {
-    line-height: 0;
-}
-
-.footer::before {
-    content: url('../img/wave.svg');
-    fill: #FFF;
-    display: block;
-}
-
-.footer__contenido {
-    background-color: var(--blanco);
-}
-
-.footer__grid {
-    line-height: initial;
-    padding: 4rem 0;
-    display: grid;
-    grid-template-rows: 2fr;
-    gap: 2rem;
-    
-}
-
-@media (min-width: 768px) { 
-    .footer__grid {
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-}
-
-.footer__box {
-    padding-left: 10rem;
-    text-align: left;
-    max-width: fit-content;
-    margin: 0 auto;
-}
-
-.footer__box::before {
-    content: '';
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 9rem;
-    height: 9rem;
-    position: absolute;
-    left: 0;
-}
-
-.footer__box:nth-child(1)::before {
-    background-image: url(../img/pet-house.png);
-}
-
-.footer__box:nth-child(2)::before {
-    background-image: url(../img/dog-training.png);
-}
-
-.footer__titulo {
-    font-family: var(--fuente-principal);
-    font-size: 2.4rem;
-}
-
-.footer__barra {
+footer .footer__barra {
     background-color: var(--secundario);
     padding: 2rem 0;
 }
 
-.footer__flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+@media (min-width: 1024px) { 
+    footer .footer__flex {
+        padding: 0 4rem;
+    }
 }
 
 .footer__logo {
@@ -439,5 +273,3 @@ p {
 .footer__redes img {
     height: 1.5rem;
 }
-
-
