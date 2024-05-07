@@ -3,6 +3,9 @@
 
 
 /* Globales */
+body {
+    min-height: 100dvh;
+}
 
 [class*="contenedor"] {
     padding: 0 2rem;
@@ -125,18 +128,6 @@
 @media (min-width: 1024px) { 
     .mascotas {
         background-position: 94% 0%, 0% 5%;
-    }
-}
-
-@media (min-width: 2560px) { 
-    .mascotas {
-        margin-top: -20vh;
-    }
-}
-
-@media (min-height: 1360px) { 
-    .mascotas {
-        margin-top: -20vh;
     }
 }
 
