@@ -12,15 +12,18 @@ ul,
 ol {
   text-decoration: none;
 }
+h1,
+h2 {
+  font-family: var(--fuente-principal);
+}
 
 /* >>>>>>>>>>FIN RESET<<<<<<<<< */
 
 /* >>>>>>>>>>ESTRUCTURA<<<<<<<<< */
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--color-bg);
-  background-image: var("#"); /*Falta la imagen del fondo*/
+  font-family: var(--fuente-secundaria);
+  background-color: var(--primario-10);
 }
 
 /* >>>>>>>>>>FIN ESTRUCTURA<<<<<<<<< */
@@ -30,7 +33,7 @@ body {
 a {
   text-decoration: none;
   font-style: normal;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fuente-principal);
 }
 
 header {
@@ -56,35 +59,35 @@ nav {
 }
 
 nav a {
-  color: var(--color-acento);
+  color: var(--primario);
   padding: 5px 10px;
   border-radius: 15px;
   transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: var(--color-texto-acento);
-  background-color: var(--color-acento);
+  color: var(--primario);
+  background-color: var(--primario-10);
 }
 
 nav a.destacado {
-  color: var(--color-texto-acento);
-  background-color: var(--color-acento);
+  color: var(--primario);
+  background-color: var(--primario-10);
 }
 
 nav a.destacado.activo {
-  text-decoration: underline;
-  text-decoration-color: var(--color-texto-acento);
+  /* text-decoration: underline; */
+  text-decoration-color: var(--primario-10);
 }
 
 nav a.destacado:hover {
-  transform: scale(1.1);
-  color: var(--color-texto-acento);
-  background-color: var(--color-acento);
+  /* transform: scale(1.1); */
+  color: var(--primario);
+  background-color: var(--primario-10);
 }
 nav a.resaltado {
-  color: var(--color-texto-acento);
-  background-color: var(--color-acento);
+  color: var(--primario-10);
+  background-color: var(--primario);
 }
 /* >>>>>>>>>>FIN HEADER<<<<<<<<< */
 
@@ -93,7 +96,7 @@ main {
 }
 .tituloMain {
   font-size: 3em;
-  color: var(--color-acento);
+  color: var(--primario);
   display: flex;
   justify-content: center;
   padding-top: 1.5em;
@@ -115,13 +118,13 @@ main {
   grid-template-columns: 50% 50%;
 }
 
-.requisitos > div {
+.requisitos__div {
   position: relative;
   height: 30vh;
   border: 0.1em;
   border-style: dashed;
   border-radius: 15px;
-  border-color: var(--color-acento);
+  border-color: var(--primario);
   display: grid;
   align-items: center;
   grid-template-columns: auto auto;
@@ -136,7 +139,7 @@ main {
 }
 
 .tituloRequisito {
-  color: var(--color-acento);
+  color: var(--primario);
   grid-area: tituloRequisito;
   padding-left: 1em;
   padding-top: 1em;
@@ -144,7 +147,7 @@ main {
   flex-direction: column;
 }
 .requisitos__numeros {
-  background-color: var(--color-acento);
+  background-color: var(--primario);
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   color: white;
@@ -167,36 +170,37 @@ main {
   justify-content: flex-start;
   align-items: center;
   text-align: justify;
-  grid-area: parrafoRequisito;
+  /* grid-area: parrafoRequisito; */
 }
 
 /* >>>>>>>>>> FIN MAIN <<<<<<<<< */
 
 /* >>>>>>>>>>TEMPORAL<<<<<<<<< */
+
 :root {
-  /* COLORES */
-  /* Backgrounds */
-  --color-bg: #f8f6f6;
-  --color-bg-2: #ffffff;
-  --color-bg-3: ;
+  --primario: #d67d31;
+  --primario-80: #d98741;
+  --primario-10: #fcf5ef;
+  --secundario: #31241c;
+  --negro: #000;
+  --blanco: #fff;
+  --gris-claro: #f9f9f9;
 
-  /* Paleta de colores  */
-  --color-primario: #833d01;
-  --color-texto-primario: #ffffff;
+  /* backgrounds */
+  --bg-body: #f9f9f9;
+  --bg-form: #ffffff;
 
-  --color-secundario: #ffbf94;
-  --color-texto-secundario: ;
+  /* inputs */
+  --border-input: #79747e;
+  --bg-i-select: #454b4f;
 
-  --color-acento: #d67d31;
-  --color-texto-acento: #ffffff;
-
+  /* fonts ***/
+  --fuente-principal: "Montserrat", sans-serif;
+  --fuente-secundaria: "Roboto", sans-serif;
   /* IMAGENES  */
 
-  /* Fondo aplicado al body en el responsive. */
+  /*logo*/
   --img-logo: url("../img/logo.png");
-
-  /* TIPOGRAFIA */
-  --txt-titulo: ;
 }
 
 /* ====== Footer ====== */
@@ -215,23 +219,24 @@ main {
 .footer__grid {
   padding: 2rem;
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .footer__box {
   display: grid;
   grid-template-columns: 1fr 0.15fr 3fr;
+  align-items: flex-end;
 }
 .footer__box img {
-  grid-column: 1 / 4;
+  grid-column: 1/ 4;
 }
 
 .footer__box h3,
 .footer__box p,
 .footer__box a {
-  grid-column: 1 / 4;
+  grid-column: 4 / 4;
 }
 
 .footer__box:nth-child(1) {
@@ -249,8 +254,8 @@ main {
 
 .footer__flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 2rem;
 }
 
@@ -280,7 +285,3 @@ main {
 }
 
 /* >>>>>>>>>>FIN TEMPORAL<<<<<<<<< */
-h1,
-h2 {
-  font-family: "Montserrat", sans-serif;
-}
