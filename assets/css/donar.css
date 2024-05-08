@@ -1,9 +1,7 @@
-
-/*Pagina En adopción ------------------------------------------->*/
+/*Pagina donar ------------------------------------------->*/
 
 
 /* Globales */
-
 
 [class*="contenedor"] {
     padding: 0 2rem;
@@ -57,7 +55,6 @@
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
     0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
-
 
 /* ====== Header ====== */
 
@@ -116,7 +113,7 @@
 
 /* ====== Main ====== */
 
-.mascotas {
+.donar {
     z-index: 5;
     padding-top: 5rem;
     text-align: center;
@@ -126,103 +123,14 @@
 }
 
 @media (min-width: 1024px) { 
-    .mascotas {
+    .donar {
         background-position: 94% 0%, 0% 5%;
     }
 }
 
-.mascotas__descripcion {
+.donar__descripcion {
     max-width: 50.6rem;
     margin: 1.5rem auto;
-}
-
-.mascotas_grid {
-    padding: 8rem 0 10rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    place-items: center;
-    align-content: space-between;
-    row-gap: 6.5rem;
-    column-gap: 2.5rem;
-}
-
-/* Card */
-
-.mascota {
-    background-color: var(--blanco);
-    min-width: 28rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    border-radius: 1.2rem;
-    border: 2px dashed var(--primario);
-    cursor: pointer;
-    transition: background-color .3s;
-}
-
-.mascota:hover {
-    background-color: #E6E6E7;
-}
-
-.mascota__corazon::after {
-    content: url(../img/corazon.svg);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
-
-.mascota__imagen {
-    width: 23rem;
-    height: 23rem;
-    margin-top: -2.5rem;   
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.mascota__imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all .3s
-}
-
-.mascota:hover .mascota__imagen img {
-    transform: rotate(-3deg) scale(1.1);
-}
-
-.mascota__contenido {
-    padding: 1rem 0;
-}
-
-.mascota__nombre {
-    font-size: 2.4rem;
-    color: var(--primario);
-    font-family: var(--fuente-principal);
-}
-
-.mascota__contenido p {
-    padding-left: 3rem;
-    text-align: left;
-}
-
-.mascota__contenido p::before {
-    position: absolute;
-    left: -.5rem;
-}
-
-.mascota__genero-edad::before {
-    content: url(../img/perrito.svg);
-}
-
-.mascota__condicion::before {
-    content: url(../img/vacuna.svg);
-}
-
-.mascota__tamaño::before {
-    content: url(../img/medidas.svg);
 }
 
 
@@ -264,3 +172,5 @@ footer .footer__barra {
 .footer__redes img {
     height: 1.5rem;
 }
+
+
