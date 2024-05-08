@@ -14,7 +14,7 @@
   --gris-claro: #f9f9f9;
 
   /* backgrounds */
-  --bg-body: #F9F9F9;
+  --bg-body: #f9f9f9;
   --bg-form: #ffffff;
 
   /* inputs */
@@ -134,6 +134,7 @@ li {
   visibility: hidden;
   overflow: hidden;
   transition: all 0.3s ease;
+  max-height: 0;
 }
 
 .navegacion__flex {
@@ -142,6 +143,11 @@ li {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.mostrar-menu-mobile {
+  visibility: visible;
+  max-height: 30rem;
 }
 
 /* ====== Footer ====== */
@@ -222,6 +228,133 @@ li {
 
 .footer__redes img {
   height: 1.5rem;
+}
+
+/* BUTTONS ************************/
+.btn__primary {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  padding-inline: 2.5rem;
+  background-color: var(--primario);
+  color: white;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.btn__primary:hover {
+  background-color: var(--primario-80);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.btn__primary:focus,
+.btn__primary:active {
+  background-color: var(--primario-80);
+}
+
+.btn__text {
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  color: var(--primario);
+  transition: background-color 0.3s;
+}
+
+.btn__text:hover,
+.btn__text:focus,
+.btn__text:active,
+.btn__text.activo {
+  background-color: var(--primario-10);
+}
+
+/*************** MEDIAQUERIES ***********/
+@media (min-width: 665px) {
+  main {
+    background-image: url(../img/huella-invertida.svg), url(../img/huella.svg);
+    background-repeat: no-repeat;
+    background-position: 75% 40%, 2% 50%;
+  }
+  .footer__contenedor {
+    padding-inline: 4rem;
+  }
+  .footer__grid {
+    flex-direction: row;
+    justify-content: center;
+    padding-inline: 0;
+    gap: 2rem;
+  }
+  .footer__flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__box {
+    grid-template-columns: 1fr 0.15fr 2fr;
+    grid-template-rows: repeat(4, 0.5fr);
+  }
+  .footer__box img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+  }
+
+  .footer__box h3,
+  .footer__box p,
+  .footer__box a {
+    grid-column: 3 / 4;
+  }
+
+  .footer__box:nth-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 19rem;
+  }
+  .footer__grid {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__contenedor {
+    padding-inline: 4rem;
+  }
+  .header__logo {
+    padding-bottom: 1rem;
+  }
+
+  .header__icono-nav {
+    display: none;
+  }
+
+  .navegacion {
+    display: block;
+    flex-basis: initial;
+    visibility: initial;
+    max-height: initial;
+  }
+
+  .navegacion__flex {
+    flex-direction: row;
+    justify-content: end;
+    padding: 0;
+  }
+
+  .navegacion__enlace--donar {
+    padding: 1rem 4rem;
+  }
+  .footer__grid {
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .footer {
+    padding-top: 21rem;
+  }
 }
 
 /* BUTTONS ************************/
