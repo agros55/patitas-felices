@@ -10,15 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if(e.target.src.includes('/assets/img/hamburguesa.svg')) {
                 iconoNav.src = '/assets/img/cruz-cerrar.svg';
-
                 menuMobile.classList.add('mostrar-menu-mobile');
-                /* menuMobile.style.visibility = 'visible';
-                menuMobile.style.maxHeight = menuMobile.scrollHeight + 'px'; */
+            
             } else {
                 iconoNav.src = '/assets/img/hamburguesa.svg';
                 menuMobile.classList.remove('mostrar-menu-mobile');
-                /* menuMobile.style.maxHeight = '0';
-                menuMobile.style.visibility = 'hidden'; */
+                
             };       
         });
     };
