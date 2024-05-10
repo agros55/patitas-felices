@@ -1,34 +1,39 @@
 /* >>>>>>>>>>RESET<<<<<<<<< */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  /* text-size-adjust: 65%; */
 }
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700;900&display=swap");
 
 ul,
 ol {
   text-decoration: none;
 }
+
 h1,
 h2 {
   font-family: var(--fuente-principal);
 }
 
-/* >>>>>>>>>>FIN RESET<<<<<<<<< */
-
-/* >>>>>>>>>>ESTRUCTURA<<<<<<<<< */
-
 body {
   font-family: var(--fuente-secundaria);
-  background-color: var(--primario-10);
+  background-color: var(--bg-body);
+  /* background-color: aquamarine; */
 }
 
-/* >>>>>>>>>>FIN ESTRUCTURA<<<<<<<<< */
+/* >>>>>>>>>>FIN RESET<<<<<<<<< */
 
 /* >>>>>>>>>>HEADER<<<<<<<<< */
+main {
+  background: url("../img/huella-invertida.svg");
+  background: url("../img/huella.svg");
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  padding-bottom: 10rem;
+}
 
 a {
   text-decoration: none;
@@ -76,12 +81,10 @@ nav a.destacado {
 }
 
 nav a.destacado.activo {
-  /* text-decoration: underline; */
   text-decoration-color: var(--primario-10);
 }
 
 nav a.destacado:hover {
-  /* transform: scale(1.1); */
   color: var(--primario);
   background-color: var(--primario-10);
 }
@@ -89,11 +92,11 @@ nav a.resaltado {
   color: var(--primario-10);
   background-color: var(--primario);
 }
+
 /* >>>>>>>>>>FIN HEADER<<<<<<<<< */
 
 /* >>>>>>>>>> MAIN <<<<<<<<< */
-main {
-}
+
 .tituloMain {
   font-size: 3em;
   color: var(--primario);
