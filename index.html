@@ -5,58 +5,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index follow">
-    <title>Patitas Felices | Refugio de Mascotas</title>
-    <link rel="stylesheet" href="./assets/css/variables.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Patitas Felices | Mascotas en adopcion</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="logo"></div>
-        <nav>
-            <a href="#" class="activo">Inicio</a>
-            <a href="./mascotas.html">Mascotas</a>
-            <a href="./requisitos.html">Requisitos</a>
-            <a href="./donar.html" class="destacado">Donar</a>
-        </nav>
+    <header class="header">
+        <div class="header__contenido">
+            <div class="header__barra header__contenedor">
+                <a href="/">
+                    <img class="header__logo" src="./assets/img/logo.png" alt="logo Patitas Felices" />
+                </a>
+
+                <img class="header__icono-nav" src="./assets/img/hamburguesa.svg" alt="navegacion icono" />
+
+                <nav class="navegacion">
+                    <div class="navegacion__flex">
+                        <a class="btn__text activo" href="./index.html">Inicio</a>
+                        <a class="btn__text" href="./mascotas.html">En adopcion</a>
+                        <a class="btn__text" href="./requisitos.html">Requisitos para adoptar</a>
+                        <a class="btn__text" href="./formulario.html">Formulario de adopción</a>
+                        <a href="./donar.html" class="btn__primary">Donar</a>
+                    </div>
+                </nav>
+            </div>
+            <!--Fin header-barra-->
+        </div>
     </header>
-    <main><!-- MAIN -->
-        <section class="hero"> <!-- SECCION HERO -->
-            <h1>Patitas Felices</h1>
-            <h2>Cambiando vidas,</h2>
-            <h2>una patita a la vez.</h2>
+
+    <main>
+        <section class="hero">
+            <figure>
+                <img src="./assets/img/wave-hero.svg" alt="Patitas Felices">
+            </figure>
+            <div class="content">
+                <h1>¡Ayudanos a ayudarlos!</h1>
+                <p>Cada donación que llega es una esperanza para mejorar la calidad de vida de ellos.</p>
+            </div>
         </section>
 
-
-        <section class="info"> <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECCION INFORMACION -->
-            <article class="nosotros">
-                <h2>Acerca de nosotros</h2>
-                <p></p>
+        <section class="sumate"> <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECCION INFORMACION -->
+            <article class="sumate__encabezado">
+                <h2>¿Querés ser parte del cambio?</h2>
+                <p>Hay muchas formas de colaborar. Cuantos más seamos, más perritos podremos sacar de la calle.
+                    <br>¡Sumáte a ayudar y cambiemos muchas vidas juntos!
+                </p>
+                <button class="btn__primary btn">¡Sumate!</button>
             </article>
+
+            <article class="sumate__item sumate__transito">
+                <figure>
+                    <img src="./assets/img/iconos-index/ico-transito.svg" alt="Tránsito">
+                </figure>
+                <div>
+                    <h3>Tránsito</h3>
+                    <p>Consiste en recibir un perrito en tu hogar y acompañarlo durante su recuperación. Los
+                        gastos son todos cubiurtos por la Asociación y tenés nuestro apoyo y el de nuestros
+                        veterinarios.</p>
+                </div>
+            </article>
+            <article class="sumate__item sumate__traslado">
+                <figure>
+                    <img src="./assets/img/iconos-index/ico-traslado.svg" alt="Traslado">
+                </figure>
+                <div>
+                    <h3>Traslado</h3>
+                    <p>Consiste en colaborar llevando perritos de la veterinaria al tránsito, a consultas o de un
+                        tránsito a
+                        otro. Si tenés auto y ganas de pasar un ratito viajando con un rescatado, ¡Sumáte!</p>
+                </div>
+            </article>
+            <article class="sumate__item sumate__donaciones">
+                <figure>
+                    <img src="./assets/img/iconos-index/ico-donaciones.svg" alt="Donaciones">
+                </figure>
+                <div>
+                    <h3>Donaciones</h3>
+                    <p>Todos nuestros gastos son cubiertos por las donaciones que realiza la gente que colabora con
+                        nosotros. Podes colaborar económicamente o con artículos como mantas, medicamentos, alimento,
+                        etc.
+                    </p>
+                </div>
+            </article>
+            <article class="sumate__item sumate__voluntariados">
+                <figure>
+                    <img src="./assets/img/iconos-index/ico-voluntariados.svg" alt="Voluntariados generales">
+                </figure>
+                <div>
+                    <h3>Voluntariados generales</h3>
+                    <p>Si querés ayudarnos con tareas generales, por ejemplo yendo a visitar a nuestros internados,
+                        colaborar con eventos cuando necesitamos voluntarios o ayudarnos difundiendo casos.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="nosotros">
+            <article class="nosotros__info">
+                <h2>¿Quiénes sómos?</h2>
+                <p>Somos un grupo de personas que rescata, recupera y da en adopción a perros que han sido abandonados o
+                    maltratados. <br>Los curamos, les damos atención veterinaria y luego buscamos que sean adoptados por
+                    familias maravillosas.
+                </p>
+                <h3>Misión</h3>
+                <p>Rescatar, curar, emparchar cuerpitos y almas, y encontrarles los adopteros que se merecen.</p>
+                <h3>Nuestro sueño</h3>
+                <p>Es que algún día, ni nosotros ni ningún otro grupo sea necesario, ya que todos tendrán su casa con
+                    amor, respeto y para siempre.</p>
+                <h3>¿Qué buscamos?</h3>
+                <p>Que cada uno de nuestros rescatados encuentre a su familia adoptera ideal, donde puedan recibir todo
+                    el amor y cuidado que merecen.</p>
+            </article>
+            <article class="nosotros__imagenes">
+                <figure>
+                    <img src="./assets/img/img-inicio/perrito1.png" alt="Tommy">
+                </figure>
+                <figure>
+                    <img src="./assets/img/img-inicio/perrito2.png" alt="Mike">
+                </figure>
+            </article>
+        </section>
+
+        <section class="mas">
+            <div>
+                <figure>
+                    <img src="./assets/img/img-inicio/perrito3.png" alt="Perrito">
+                </figure>
+            </div>
+            <div>
+                <p class="mas__parraf__principal">Un hogar es una segunda oportunidad para ellos. <br>¡Ayudanos a
+                    sanarlos!</p>
+                <h2>¿Por qué adoptar?</h2>
+                <p>Por su nobleza, por su amor incondicional, porque son compañeros fieles que pueden convertirse en
+                    nuestros mejores amigos. <br>Porque adoptar es brindar una segunda oportunidad, la oportunidad de
+                    ser amado y cuidados como se merecen.</p>
+                <button class="btn btn__primary btn__mas">¡Encontrá a tu nuevo mejor amigo!</button>
+            </div>
+        </section>
+
+        <section class="historias">
+            <h2>Adoptá con conciencia y corazón</h2>
+            <p>Al pensar en adoptar, es crucial tener en cuenta diversos factores para garantizar una convivencia
+                armoniosa. Evaltua el espacio disponible en tu hogar, el tiempo que puedes dedicar al juego y paseo, asi
+                como los costos asociados con la alimentación, atención veterinaria y cuidado durante las vacaciones.
+                Asegurate de que tu elección de mascota se ajuste a tu estilo de vida y a la cantidad de tiempo que
+                puedes comprometer.</p>
+
+            <div class="historias__imgs">
+                <figure>
+                    <img src="./assets/img/img-inicio/adoptado1.png" alt="Mica y Tomy">
+                </figure>
+                <figure>
+                    <img src="./assets/img/img-inicio/adoptado2.png" alt="Peludo">
+                </figure>
+                <figure>
+                    <img src="./assets/img/img-inicio/adoptado3.png" alt="Maxi y Negrito">
+                </figure>
+            </div>
         </section>
 
 
     </main>
-    <footer> <!-- FOOTER -->
-        <address> <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< INFO DE CONTACTO -->
-            <h2>Contacto</h2>
-            <ul>
-                <li>Telefono: +543758444444</li>
-                <li>Direccion: Libertad 1718, Apostoles, Misiones.</li>
 
-            </ul>
-        </address>
-        <nav class="footer"> <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NAVEGACION FOOTER -->
-            <h2 class="title">Enlaces</h2>
-            <a href="#" class="item">Inicio</a>
-            <a href="./mascotas.html" class="item">Mascotas</a>
-            <a href="./requisitos.html" class="item">Requisitos</a>
-            <a href="./donar.html" class="item">Donar</a>
-        </nav>
+    <footer class="footer">
+        <div class="footer__contenedor footer__grid">
+            <div class="footer__box">
+                <img src="./assets/img/pet-house.png" alt="Cucha de perrito" />
+                <h3 class="footer__titulo">Abrimos el refugio</h3>
+                <p>De Lunes a Viernes: 09am a 20pm.</p>
+                <p>Sábados: 09am a 13pm.</p>
+                <p>Domingos: cerrados.</p>
+            </div>
+            <div class="footer__box">
+                <img src="./assets/img/dog-training.png" alt="Perrito feliz" />
+                <h3 class="footer__titulo">Datos de contacto</h3>
+                <p>Santiago 781, Rosario, Santa Fe</p>
+                <a href="tel:+543541437460" class="footer__enlace">
+                    +54 (3541) 437460
+                </a>
+                <a href="mailto:info@patitasfelices" class="footer__enlace">
+                    info@patitasfelices
+                </a>
+            </div>
+        </div>
+        <div class="footer__barra">
+            <div class="footer__flex">
+                <a href="/" class="footer__logo">
+                    <img src="/assets/img/logo-footer.svg" alt="Logo Patitas Felices" />
+                </a>
+                <div class="footer__redes">
+                    <a href="#">
+                        <img src="/assets/img/instagram.svg" alt="Icono instagram" />
+                    </a>
+                    <a href="#">
+                        <img src="/assets/img/facebook.svg" alt="Icono facebook" />
+                    </a>
+                    <a href="#">
+                        <img src="/assets/img/whatsapp.svg" alt="Icono whatsapp" />
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/menu-mobile.js"></script>
 </body>
 
 </html>

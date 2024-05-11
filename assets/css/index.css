@@ -1,0 +1,381 @@
+main {
+    min-height: 70vh;
+}
+
+h2,
+h3 {
+    font-family: var(--fuente-principal)
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    max-height: 90vh;
+    background: url("../img/perritos-min2.png");
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 20vh;
+}
+
+.hero figure {
+    width: 100%;
+    position: absolute;
+    bottom: -13vh;
+}
+
+.hero .content {
+    position: absolute;
+    bottom: 30vh;
+    padding: 0 10vw;
+}
+
+.hero h1 {
+    font-family: var(--fuente-principal);
+    font-size: 4rem;
+    color: var(--blanco);
+    margin-bottom: 5vh;
+    background-color: #e2e2e23f;
+}
+
+.hero p {
+    font-size: 2rem;
+    color: var(--blanco);
+    line-height: 3rem;
+    background-color: #e2e2e23f;
+}
+
+/* ----- SECCION SUMATE ----- */
+.sumate {
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: -10vh;
+    padding: 5rem 3rem;
+    background-color: #e2e2e2;
+    opacity: .95;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sum-encabezado"
+        "sum-transito"
+        "sum-traslado"
+        "sum-donaciones"
+        "sum-voluntariados"
+    ;
+    gap: 2rem;
+    border-radius: 1rem;
+
+}
+
+.sumate__item {
+    background-color: var(--primario-10);
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.sumate__item>figure {
+    margin: 0 1rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sumate h2 {
+    font-size: 4rem;
+    color: var(--primario);
+    margin-bottom: .5rem;
+}
+
+.sumate h3 {
+    color: var(--primario);
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+}
+
+.sumate__encabezado {
+    grid-area: sum-encabezado;
+    padding-bottom: 1rem;
+}
+
+.sumate .btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.sumate__transito {
+    grid-area: sum-transito;
+}
+
+.sumate__traslado {
+    grid-area: sum-traslado;
+}
+
+.sumate__donaciones {
+    grid-area: sum-donaciones;
+}
+
+.sumate__voluntariados {
+    grid-area: sum-voluntariados;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero h1 {
+        font-size: 5rem;
+        background-color: transparent;
+    }
+
+    .hero p {
+        font-size: 3rem;
+        background-color: transparent;
+    }
+
+    .sumate {
+        width: 90vw;
+        padding: 3rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: "sum-encabezado sum-encabezado"
+            "sum-transito sum-traslado"
+            "sum-donaciones sum-voluntariados"
+        ;
+        border: 3px dashed var(--primario);
+    }
+
+    .sumate h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .hero h1 {
+        font-size: 7rem;
+    }
+
+    .hero p {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    .sumate {
+        position: relative;
+        width: 80vw;
+        padding: 3rem 5rem;
+        gap: 3rem;
+    }
+
+    .sumate__item {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        flex-direction: row;
+        padding: 3rem;
+        align-items: flex-start;
+    }
+
+    .sumate__encabezado p {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .sumate__encabezado .btn {
+        position: absolute;
+        width: auto;
+        padding: 0 5rem;
+        top: 3vh;
+        right: 0;
+    }
+
+    .sumate h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+
+.nosotros h2 {
+    color: var(--primario);
+}
+
+.nosotros h3 {
+    color: var(--primario);
+}
+
+.nosotros__imagenes figure:nth-child(2) {
+    margin-top: -10rem;
+}
+
+@media screen and (min-width: 768px) {
+    .nosotros__imagenes {
+        display: flex;
+    }
+
+    .nosotros__imagenes figure:nth-child(2) {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .nosotros {
+        width: 80vw;
+        margin: 10rem auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .nosotros h2 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .nosotros h3 {
+        font-size: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .nosotros p {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .nosotros__imagenes {
+        display: flex;
+        padding: 5rem;
+        flex-direction: column;
+        margin-top: -12rem;
+    }
+
+    .nosotros__imagenes figure:nth-child(2) {
+        margin-top: -10rem;
+        margin-left: 2rem;
+    }
+
+}
+
+.mas {
+    background-image: url(../img/wave-inicio.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    align-items: center;
+    padding: 3rem;
+    padding-bottom: 8rem;
+
+}
+
+.mas h2 {
+    color: var(--blanco);
+    margin-bottom: 3rem;
+}
+
+.mas p {
+    color: var(--blanco);
+    margin-bottom: 3rem;
+}
+
+.mas figure {
+    display: none;
+}
+
+.btn__mas {
+    background-color: var(--primario-10);
+    color: var(--primario);
+    transition: all .5s ease;
+}
+
+.btn__mas:hover {
+    color: var(--primario-10);
+}
+
+@media screen and (min-width: 762px) {
+    .mas {
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mas {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        padding: 0 15vw;
+        gap: 5rem;
+    }
+
+    .mas figure {
+        display: block;
+        width: 90%;
+    }
+
+    .mas p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .mas .mas__parraf__principal {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .mas h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.historias {
+    width: 100%;
+    padding: 3rem;
+}
+
+.historias h2 {
+    color: var(--primario);
+    margin-bottom: 3rem;
+}
+
+.historias__imgs {
+    display: none;
+}
+
+@media screen and (min-width: 762px) {
+    .historias__imgs {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .historias {
+        width: 80vw;
+        height: 80vh;
+        margin: 0 auto;
+        padding: 3rem;
+    }
+
+    .historias h2 {
+        font-size: 4rem;
+    }
+
+    .historias p {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .historias__imgs {
+        display: flex;
+    }
+}
