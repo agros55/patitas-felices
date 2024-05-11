@@ -82,10 +82,10 @@ nav a:hover {
   background-color: var(--primario-10);
 }
 
-nav a.destacado {
+/* nav a.destacado {
   color: var(--primario);
   background-color: var(--primario-10);
-}
+} */
 
 nav a.destacado.activo {
   text-decoration-color: var(--primario-10);
