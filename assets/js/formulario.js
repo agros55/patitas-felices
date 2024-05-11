@@ -1,6 +1,11 @@
 const form = document.querySelector(".form");
 const nombre = document.querySelector("#nombre");
 
+
+form.addEventListener('input', (e) => {
+  
+})
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
