@@ -24,27 +24,68 @@
 
                 <nav class="navegacion">
                     <div class="navegacion__flex">
-                        <a class="navegacion__enlace activo" href="./mascotas.html">En adopcion</a>
-                        <a class="navegacion__enlace" href="./requisitos.html">Requisitos para adoptar</a>
-                        <a class="navegacion__enlace" href="./formulario.html">Formulario de adopción</a>
-                        <a class="navegacion__btn" href="./donar.html">Donar</a>
+                        <a class="btn__text" href="./mascotas.html">En adopcion</a>
+                        <a class="btn__text" href="./requisitos.html">Requisitos para adoptar</a>
+                        <a class="btn__text" href="./formulario.html">Formulario de adopción</a>
+                        <a class="btn__primary activo" href="./donar.html">Donar</a>
                     </div>  
-            </nav>
+                </nav>
             </div> <!--Fin header-barra-->
         </div>
     </header>
 
-    <main class="donar donar__contenedor">      
-        <h2 class="donar__heading">¿Querés ayudarnos?</h2>
-        <h3 >¡Con tu donación nos ayudás a seguir rescatando!</h3>
-        <p class="donar__descripcion">Podés donar por Mercado Pago o por Transferencia y si estás fuera de Argentina podés hacer tu donación por PayPal.</p>
-        <div class="donar__opciones">
-            <div></div>
-            <div></div>
-            <div></div>                
+    <main class="donar"> 
+        <h2 class="donar__heading">Ayudanos a seguir rescantado</h2>
+        <div class="donar__texto">
+            <strong>¡Tu ayuda significa mucho para nosotros y nuestros perritos!</strong>
+            <p>En el refugio, todo aporte cuenta. Necesitamos tanto donaciones económicas para cubrir gastos de alimentos, veterinarios y medicamentos, como donaciones de insumos.</p>
         </div>
-
-
+        
+        <div class="donar__grid">
+            <div class="metodo">
+                <h3 class="metodo__nombre">Mercado pago</h3>
+                <div class="metodo__montos">
+                    <div>
+                        <a href="#" class="btn_light">$10000</a>
+                        <a href="#" class="btn_light">$5000</a>
+                        <a href="#" class="btn_light">$3000</a>
+                    </div>
+                    <div>
+                        <a href="#" class="btn_light">$2000</a>
+                        <a href="#" class="btn_light">$1000</a>
+                        <a href="#" class="btn_light">$500</a>
+                        <a href="#" class="btn_light">$200</a>
+                    </div>
+                    
+                </div>
+                <p>O ingresando el monto que quieras</p>
+                <div>
+                    <label for="monto">$</label>
+                    <input class="metodo__input" name="monto" id="monto"  type="number" placeholder="Ingresa un monto">
+                </div>
+                <button class="btn__primary">Donar</button>
+                <em>¡También podes al débito automático mensual!</em>
+                <button class="btn__primary">Quiero suscribirme</button>
+            </div>
+            <div class="metodo">
+                <h3 class="metodo__nombre">Cuenta bancaria</h3>
+                <div class="metodo__texto">
+                    <p>Banco Santander Rio</p>
+                    <p>Patitas Felices</p>
+                    <p>Cta Cte n° 0127787 - Sucursal 180</p>
+                    <p>CBU 0720180220000001237872</p>
+                    <p>CUIT 30-7484989593-0</p>
+                </div>
+            </div>
+            <div class="metodo">
+                <h3 class="metodo__nombre">Paypal</h3>
+                <div class="metodo__texto">
+                    <p>Si estas en el exterior y querés ayudarnos</p>
+                    <p>Podes enviarnos con nuestro mail</p>
+                    <p>patitasfelicesok@gmail.com</p>
+                </div>
+            </div>
+        </div> <!--Fin donar__grid-->   
     </main>
 
     <footer class="footer"> 
