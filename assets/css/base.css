@@ -21,6 +21,11 @@
   --border-input: #79747e;
   --bg-i-select: #454b4f;
 
+  --error: #d43f2e;
+  --error-light: #fde6e3;
+  --success: #0f8651;
+  --success-light: #dafeed;
+
   /* fonts ***/
   --fuente-principal: "Montserrat", sans-serif;
   --fuente-secundaria: "Roboto", sans-serif;

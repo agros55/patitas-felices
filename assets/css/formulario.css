@@ -66,6 +66,37 @@
   height: 3rem;
 }
 
+.error,
+.enviado {
+  padding: 1.5rem 3rem;
+  border-radius: 10px;
+  margin-block: 1rem;
+  display: none;
+  font-size: 14px;
+  border: 1px solid transparent
+}
+
+.error {
+  background-color: var(--error-light);
+  border-color: var(--error);
+}
+
+.errorNombre,
+.errorEmail {
+  margin-block: 0.75rem;
+  color: var(--error);
+}
+
+.mostrar-error {
+  display: block;
+}
+
+.enviado {
+  background-color: var(--success-light);
+  border-color: var(--success);
+  color: var(--success);
+}
+
 /* INPUTS CUSOTMIZE *****************/
 
 .form__label--float {
