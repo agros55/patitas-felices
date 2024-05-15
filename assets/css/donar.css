@@ -26,8 +26,11 @@
 }
 
 
-
 @media (min-width: 1024px) { 
+    .header__contenedor > a:nth-child(1) {
+        padding-left: 0;
+    }
+
     .header__contenedor .navegacion__enlace--donar {
         padding: 0.7rem 2.5rem;
     }
