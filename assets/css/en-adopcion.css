@@ -4,16 +4,6 @@
 
 /* Globales */
 
-[class*="contenedor"] {
-    padding: 0 2rem;
-}
-
-@media (min-width: 1024px) { 
-    [class*="contenedor"] {
-        padding: 0 4rem;
-    }
-}
-
 [class*="heading"] {
     font-size: 3rem;
     font-family: var(--fuente-principal);
@@ -22,7 +12,7 @@
 }
 
 @media (min-width: 768px) { 
-    [class*="heading"] {
+    h2[class*="heading"] {
         font-size: 4.2rem;
         line-height: 6rem;
     }
@@ -31,12 +21,7 @@
 /* ====== Header ====== */
 
 .header__contenedor > a:nth-child(1) {
-    padding-left: 0;
-}
-
-.header__contenedor img.header__icono-nav {
-    padding-right: 0;
-    width: 3rem;
+    padding-left: 2rem;
 }
 
 @media (min-width: 1024px) { 
@@ -92,7 +77,6 @@
     max-width: 54.9rem;
     margin: 1.5rem auto;
 }
-
 
 .mascotas__grid {
     padding: 4rem 0 5rem 0;
