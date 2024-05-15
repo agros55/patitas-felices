@@ -72,8 +72,7 @@ h3 {
 }
 
 ul,
-ol,
-li {
+ol {
   list-style: none;
   padding-left: 0;
 }
@@ -99,8 +98,6 @@ li {
 .header__contenedor {
   width: 100%;
 }
-
-
 
 .header__contenedor .header__icono-nav {
   padding-right: 2rem;
@@ -256,6 +253,25 @@ li {
 .btn__primary:focus,
 .btn__primary:active {
   background-color: var(--primario-80);
+}
+
+.btn__light {
+    border-radius: 10rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--primario);
+    border: var(--primario) solid 1px;
+    transition: background-color .3s;
+    width: 7rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn__light:hover {
+    background-color: var(--primario-80);
+    color: var(--blanco);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
 .btn__text {
