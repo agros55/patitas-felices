@@ -46,14 +46,14 @@
       </p>
 
       <section class="section__form">
-        <form action="/enviar_datos" method="post" class="form">
+        <form action="" method="post" enctype="multipart/form-data" class="form">
           <fieldset class="form__container">
             <h3 class="form__title">Tus datos de contacto</h3>
             <label for="nombre" class="form__label--float">Nombre y Apellido *</label>
             <input type="text" name="nombre" id="nombre" class="form__input" />
             <label for="telefono" class="form__label--float">Teléfono de contacto
             </label>
-            <input type="tel" name="telefono" id="telefono" class="form__input" />
+            <input type="tel" name="telefono" id="telefono" class="form__input" maxlength="10" />
             <label for="domicilio" class="form__label--float">Domicilio
             </label>
             <input type="text" name="domicilio" id="domicilio" class="form__input" />
@@ -188,7 +188,8 @@
     </div>
   </footer>
 
-  <script src="./assets/js/formulario.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <!-- <script src="./assets/js/formulario.js"></script> -->
   <script src="./assets/js/menu-mobile.js"></script>
 </body>
 
