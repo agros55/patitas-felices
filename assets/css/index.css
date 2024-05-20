@@ -77,7 +77,7 @@ h3 {
 
 .sumate__item>figure {
     margin: 0 1rem;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -154,12 +154,12 @@ h3 {
 @media screen and (min-width: 1024px) {
 
     .hero h1 {
-        font-size: 7rem;
+        font-size: 4rem;
     }
 
     .hero p {
-        font-size: 5rem;
-        line-height: 6rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
     }
 
     .sumate {
@@ -167,6 +167,44 @@ h3 {
         width: 80vw;
         padding: 3rem 5rem;
         gap: 3rem;
+    }
+
+    .sumate__item {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        flex-direction: row;
+        padding: 2rem;
+        align-items: flex-start;
+    }
+
+    .sumate__encabezado p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 2.5rem;
+        padding-right: 20rem;
+    }
+
+    .sumate__encabezado .btn {
+        position: absolute;
+        width: auto;
+        padding: 0 5rem;
+        top: 7vh;
+        right: 0;
+    }
+
+    .sumate h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hero h1 {
+        font-size: 7rem;
+    }
+
+    .hero p {
+        font-size: 5rem;
+        line-height: 6rem;
     }
 
     .sumate__item {
@@ -303,12 +341,14 @@ h3 {
 @media screen and (min-width: 762px) {
     .mas {
         height: 70vh;
+        background-size: cover;
+        background-position: center;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .mas {
-        height: 80vh;
+        height: 85vh;
         display: grid;
         grid-template-columns: 1fr 2fr;
         align-items: center;
@@ -321,6 +361,24 @@ h3 {
         width: 90%;
     }
 
+    .mas p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .mas .mas__parraf__principal {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .mas h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
     .mas p {
         font-size: 2rem;
         line-height: 2.5rem;
