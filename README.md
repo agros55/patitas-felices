@@ -18,7 +18,7 @@ El proyecto consiste en el diseño, maquetacion y desarrollo del Front End de un
 ## Estructura del sitio
 ### Inicio
 - ¿Querés ser parte del cambio?: se detalla las formas en que se puede ayudar al refugio y tiene un botón de llamado a la acción.
-- ¿Quiénes sómos?: Breve descripción del refugio, con la *Misión* y *Visión* del refugio.
+- ¿Quiénes somos?: Breve descripción del refugio, con la *Misión* y *Visión* del refugio.
 - Llamado a la acción
 - Información a tener en cuenta para adoptar.
 
@@ -37,7 +37,7 @@ El proyecto consiste en el diseño, maquetacion y desarrollo del Front End de un
 3. Visita domiciliaria
 4. Compromiso de cuidado
 5. Comprobantes de identidad
-6. Seguimiento post-adopción
+6. Seguimiento postadopción
 7. Mayoría de edad
 8. Disponibilidad y paciencia
 
